@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/icon_1" />
+
+    <Button
+        android:id="@+id/bt_RotationY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="RotationYS"
+        android:text="绕Y轴顺时针旋转" />
+    
+    <Button
+        android:id="@+id/bt_RotationYN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bt_RotationY"
+        android:onClick="RotationYN"
+        android:text="绕Y轴逆时针旋转" />
+
+    <Button
+        android:id="@+id/bt_RotationZS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_RotationY"
+        android:onClick="RotationZS"
+        android:text="绕Z轴顺时针旋转" />
+    
+    <Button
+        android:id="@+id/bt_RotationZN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_RotationY"
+        android:layout_toRightOf="@+id/bt_RotationZS"
+        android:onClick="RotationZN"
+        android:text="绕Z轴逆时针旋转" />
+
+    <Button
+        android:id="@+id/bt_RotationXS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_RotationZS"
+        android:onClick="RotationXS"
+        android:text="绕X轴顺时针旋转" />
+    
+    <Button
+        android:id="@+id/bt_RotationXN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_RotationZS"
+        android:layout_toRightOf="@+id/bt_RotationXS"
+        android:onClick="RotationXN"
+        android:text="绕X轴逆时针旋转" />
+    
+
+</RelativeLayout>
