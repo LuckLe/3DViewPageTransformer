@@ -93,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
             switch (position) {
 //			"默认", "深入浅出", "立方体", "旋转","左右折叠", "右上角进入" , "右下角进入", "淡入淡出","3D无缩放","3D有缩放"
                 case 0:
+                    // reverseDrawingOrder = true :viewpager在绘制子view时是倒序绘制，即先画后面的再画前面的(若2个子View有重叠部分的话前一个View会盖住后一个View)
+                    // reverseDrawingOrder = false:viewpager在绘制子view时是正序绘制，即先画前面的再画后面的(若2个子View有重叠部分的话后一个View会盖住前一个View)
                     mViewPager.setPageTransformer(true, new DefaultTransformer());
                     break;
                 case 1:
